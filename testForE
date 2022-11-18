@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    
+	cout << "Enter a word to test for e's:";
+	
+	string word{};
+	getline(cin, word);
+	
+	if (word.find('e') != string::npos){
+		cout << "YES - " << word << " contains an e!" << endl;
+	}else{
+		cout << "NO e's found!" << endl;
+
+	}
+	
+    return 0;
+}
